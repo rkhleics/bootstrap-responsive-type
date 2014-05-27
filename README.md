@@ -32,10 +32,20 @@ The LESS files provided are designed to work with Bootstrap version v3.1.1, whic
 1. After adding bootstrap to your project, go to bootstrap's less folder, and copy **less/responsive-type.less** and **less/responsive-type-variables.less** into it.
 2. Open up **bootstrap.less** (in the same folder)
 3. Add a new line after the **variables.less** import line, to add the new variables into your project. e.g. 
-    **@import "responsive-type-variables.less";**.
+```
+#!less
+
+@import "responsive-type-variables.less";
+```
+
 Or, if you'd rather have all your variables in one file, you can copy and paste everything from **responsive-type-variables.less** into **variables.less** 
-4. Add a new line after the **type.less** import line, to add responsive type functionality into your project. e.g.
-    **@import "responsive-type.less";**
+4. Add a new line after the **type.less** import line, to add responsive type functionality into your project. e.g. 
+```
+#!less
+
+@import "responsive-type.less";
+```
+
 5. Recompile **bootstrap.less**
 
 ### If you want to see results quickly
