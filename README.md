@@ -24,6 +24,10 @@ Over time, we've often found ourselves hitting the same issues when it comes to 
 
 Rather than use just a single type scale, this project allows scales to be set for each of bootstrap's default breakpoints, allowing you to easily 'tighten-up' heading size difference when screen width is limited, and allow for bigger increments when that limitation is reduced.
 
+## Project limitations
+
+For now, this project is only concerned with the sizes of headings and standard body text. Any bootstrap elements which define a font-size based on the **@base-font-size** variable (or it's derivitives), will not be effected by the integration of boostrap-responsive-type.
+
 ## Installation instructions
 
 The LESS files provided are designed to work with Bootstrap version v3.1.1, which is available to download here:
