@@ -18,7 +18,7 @@ We know the web is a vastly different world to print, but the practice of using 
 
 This project aims to change the general approach of setting pixel-value variables to control heading sizes, and instead, use scale values to determine heading sizes automatically and consistently, maintaining that relationship between type elements.
 
-### 3) Allow for different type scales applied for each breakpoint
+### 3) Allow for different type scales to be applied for each breakpoint
 
 Over time, we've often found ourselves hitting the same issues when it comes to heading sizes. e.g. "That big H1 is fine when there is room for it, but at 320px wide, it takes up 2 whole screens". 
 
