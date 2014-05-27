@@ -4,9 +4,9 @@ In case you didn't know, [Bootstrap](http://getbootstrap.com) is a sleek, intuit
 
 This project has been created to add some additional type-related functionality, which bootstrap doesn't have currently.
 
-## Specific aims of this project
+## Specific aims
 
-### 1) Adjust base font-size and line-height for different breakpoints
+### 1) Allow for base font-size and line-height to be adjusted for each breakpoint
 
 In the past, we've found ourselves needing to adjust general text size at different breakpoints, to help text flow better, and to make the most out of whatever space is available. 
 
@@ -18,13 +18,13 @@ We know the web is a vastly different world to print, but the practice of using 
 
 This project aims to change the general approach of setting pixel-value variables to control heading sizes, and instead, use scale values to determine heading sizes automatically and consistently, maintaining that relationship between type elements.
 
-### 3) Apply different type scales at different breakpoints
+### 3) Allow for different type scales applied for each breakpoint
 
 Over time, we've often found ourselves hitting the same issues when it comes to heading sizes. e.g. "That big H1 is fine when there is room for it, but at 320px wide, it takes up 2 whole screens". 
 
 Rather than use just a single type scale, this project allows scales to be set for each of bootstrap's default breakpoints, allowing you to easily 'tighten-up' heading size difference when screen width is limited, and allow for bigger increments when that limitation is reduced.
 
-## Getting started
+## Installation instructions
 
 The LESS files provided are designed to work with Bootstrap version v3.1.1, which is available to download here:
 <https://github.com/twbs/bootstrap/archive/v3.1.1.zip>
@@ -55,6 +55,11 @@ Or, if you'd rather have all your variables in one file, you can copy and paste 
 
 1. Add **typetest.html** to your project, and make sure it pulls in the newly compiled **bootstrap.css**
 2. Open up **typetest.html** to see how your type and headings look, and use as a test for tweaking the values from **responsive-type-variables.less** according to your font selections and requirements
+
+
+### If you want to know more about how it works
+
+See comments within **responsive-type-variables.less** to get a better idea of what each variable does. 
 
 
 ## Authors
