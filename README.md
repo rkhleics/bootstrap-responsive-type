@@ -10,11 +10,11 @@ This project has been created to add some additional type-related functionality,
 
 In the past, we've found ourselves needing to adjust general text size at different breakpoints, to help text flow better, and to make the most out of whatever space is available. 
 
-This project offers font-size and line-height settings for each of bootstrap's default breakpoints, to make this easier to control.
+This project offers a new set of font-size and line-height variables, to allow for easy control of these values across each of bootstrap's default breakpoints.
 
 ### 2) Use scale values to reliably calculate heading sizes
 
-We know the web is a vastly different world to print, but the practice of using fixed scale values to control the differences in sizing between certain type elements, exists out of desire for accuracy, consistency and a perseverance of a relationship between those elements. These concepts are applicable to all areas of design, whatever the format. 
+We know the web is a vastly different world to print, but the practice of using fixed scale values to control the differences in sizing between certain type elements, exists out of desire for accuracy, consistency and to preserve of a relationship between those elements. These concepts are applicable to all areas of design, whatever the format. 
 
 This project aims to change the general approach of setting pixel-value variables to control heading sizes, and instead, use scale values to determine heading sizes automatically and consistently, maintaining that relationship between type elements.
 
