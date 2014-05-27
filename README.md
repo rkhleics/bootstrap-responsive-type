@@ -26,7 +26,7 @@ Rather than use just a single type scale, this project allows scales to be set f
 
 ## Project limitations
 
-For now, this project is only concerned with the sizes of headings and standard body text. Any bootstrap elements which define a font-size based on the **@base-font-size** variable (or it's derivitives), will not be effected by the integration of boostrap-responsive-type.
+For now, this project is only concerned with the sizes of headings and standard body text. Any bootstrap elements which define a font-size based on the **@base-font-size** variable (or it's derivitives), will not be effected by the integration of boostrap-responsive-type. Currently, this applies to buttons, badges, carousel captions, tooltips and popovers
 
 ## Installation instructions
 
