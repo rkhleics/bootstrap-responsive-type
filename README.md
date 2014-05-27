@@ -10,7 +10,7 @@ This project has been created to add some additional 'Responsive Type' related f
 
 In the past, we've found ourselves needing to adjust base font size at different breakpoints, to help text flow better, and to make the most out of whatever space is available. 
 
-This project offers a new set of variables, which allows for individual font-size and line-height settings for each of bootstrap's default breakpoints.
+This project offers a new set of variables, allowing you to set individual font-size and line-height settings for each of bootstrap's default breakpoints.
 
 ### 2) Use scale values to reliably calculate heading sizes
 
