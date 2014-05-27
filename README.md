@@ -20,7 +20,8 @@ This project aims to change the general approach of setting pixel-value variable
 
 ### 3) Allow for different type scales to be applied for each breakpoint
 
-Over time, we've often found ourselves hitting the same issues when it comes to heading sizes. e.g. "That big H1 is fine when there is room for it, but at 320px wide, it takes up 2 whole screens". 
+Over time, we've often found ourselves hitting the same issues when it comes to heading sizes. e.g. 
+> "That big H1 is fine when there is room for it, but at 320px wide, it takes up 2 whole screens". 
 
 Rather than use just a single type scale, this project allows scales to be set for each of bootstrap's default breakpoints, allowing you to easily 'tighten-up' heading size difference when screen width is limited, and allow for bigger increments when that limitation is reduced.
 
