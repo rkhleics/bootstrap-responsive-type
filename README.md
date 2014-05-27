@@ -14,7 +14,7 @@ This project offers a new set of variables, allowing you to set individual font-
 
 ### 2) Use scale values to reliably calculate heading sizes
 
-We know the web is a vastly different world to print, but the practice of using type scales to control the differences in sizing between key type elements exists out of desire for consistency and to preserve a relationship between those elements - something that is applicable, whatever the medium.
+We know the web is a vastly different world to print, but the practice of using type scales to control the differences in sizing between key type elements exists out of desire to improve consistency, and to preserve a relationship between type elements - Something that is applicable, whatever the medium.
 
 This project aims to change the general approach of setting pixel-value variables to control heading sizes, and instead, use scale values to determine heading sizes automatically and consistently, maintaining that relationship between type elements.
 
