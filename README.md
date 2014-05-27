@@ -54,15 +54,15 @@ Or, if you'd rather have all your variables in one file, you can copy and paste 
 @import "responsive-type.less";
 ```
 
-5) Recompile **bootstrap.less**
+5) Recompile **bootstrap.
 
-### If you want to see results quickly
+## WANT TO QUICKLY SEE HOW IT LOOKS?
 
 1. Add **typetest.html** to your project, and make sure it pulls in the newly compiled **bootstrap.css**
 2. Open up **typetest.html** to see how your type and headings look, and use as a test for tweaking the values from **responsive-type-variables.less** according to your font selections and requirements
 
 
-### If you want to know more about how it works
+## WANT TO KNOW MORE ABOUT HOW IT WORKS?
 
 See comments within **responsive-type-variables.less** to get a better idea of what each variable does. 
 
