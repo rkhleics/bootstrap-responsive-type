@@ -14,13 +14,13 @@ This project offers a new set of font-size and line-height variables, to allow f
 
 ### 2) Use scale values to reliably calculate heading sizes
 
-We know the web is a vastly different world to print, but the practice of using fixed scale values to control the differences in sizing between certain type elements, exists out of desire for accuracy, consistency and to preserve of a relationship between those elements. These concepts are applicable to all areas of design, whatever the format. 
+We know the web is a vastly different world to print, but the practice of using type scales to control the differences in sizing between certain type elements, exists out of desire for accuracy, consistency and to preserve a relationship between those elements. 
 
 This project aims to change the general approach of setting pixel-value variables to control heading sizes, and instead, use scale values to determine heading sizes automatically and consistently, maintaining that relationship between type elements.
 
 ### 3) Apply different type scales at different breakpoints
 
-Over time, we've found ourselves hitting the same issues when it comes to heading sizes. e.g. "That big H1 is fine when there is room for it, but at 320px wide, it takes up 2 whole screens". 
+Over time, we've often found ourselves hitting the same issues when it comes to heading sizes. e.g. "That big H1 is fine when there is room for it, but at 320px wide, it takes up 2 whole screens". 
 
 Rather than use just a single type scale, this project allows scales to be set for each of bootstrap's default breakpoints, allowing you to easily 'tighten-up' heading size difference when screen width is limited, and allow for bigger increments when that limitation is reduced.
 
@@ -31,8 +31,11 @@ The LESS files provided are designed to work with Bootstrap version v3.1.1, whic
 
 1. After adding bootstrap to your project, go to bootstrap's less folder, and copy **less/responsive-type.less** and **less/responsive-type-variables.less** into it.
 2. Open up **bootstrap.less** (in the same folder)
-3. Add a new line after the **variables.less** import line, to add the new variables into your project. e.g. **@import "responsive-type-variables.less";**. Or, if you'd rather have all your variables in one file, you can copy and paste everything from **responsive-type-variables.less** into **bootstrap/less/variables.less** 
-4. Add a new line after the **type.less** import line, to add responsive type functionality into your project. e.g. **@import "responsive-type.less";**
+3. Add a new line after the **variables.less** import line, to add the new variables into your project. e.g. 
+    **@import "responsive-type-variables.less";**.
+Or, if you'd rather have all your variables in one file, you can copy and paste everything from **responsive-type-variables.less** into **variables.less** 
+4. Add a new line after the **type.less** import line, to add responsive type functionality into your project. e.g.
+    **@import "responsive-type.less";**
 5. Recompile **bootstrap.less**
 
 ### If you want to see results quickly
