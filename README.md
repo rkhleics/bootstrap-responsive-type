@@ -1,8 +1,8 @@
 # Responsive Type for Bootstrap
 
-In case you didn't know, [Bootstrap](http://getbootstrap.com) is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat), and maintained by the [core team](https://github.com/twbs?tab=members) with the massive support and involvement of the community.
+We're sure you know already, but [Bootstrap](http://getbootstrap.com) is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat), and maintained by the [core team](https://github.com/twbs?tab=members) with the massive support and involvement of the community.
 
-This project has been created to add some additional type-related functionality, which bootstrap doesn't have currently.
+This project has been created to add some additional 'Responsive Type' related functionality to boostrap implementations, which bootstrap doesn't yet have by default.
 
 ## SPECIFIC AIMS 
 
