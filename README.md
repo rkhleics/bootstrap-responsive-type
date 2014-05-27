@@ -6,7 +6,7 @@ This project has been created to add some additional 'Responsive Type' related f
 
 ## SPECIFIC AIMS 
 
-### 1) Allow for base font-size and line-height to be adjusted for each breakpoint
+### 1) Allow for base font-size and line-height to be set for each breakpoint
 
 In the past, we've found ourselves needing to adjust base font size at different breakpoints, to help text flow better, and to make the most out of whatever space is available. 
 
