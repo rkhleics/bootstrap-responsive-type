@@ -54,7 +54,7 @@ Or, if you'd rather have all your variables in one file, you can copy and paste 
 @import "responsive-type.less";
 ```
 
-5) Recompile **bootstrap.
+5) Recompile **bootstrap.less**
 
 ## WANT TO QUICKLY SEE HOW IT LOOKS?
 
