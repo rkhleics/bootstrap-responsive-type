@@ -29,6 +29,10 @@ Rather than use just a single type scale, this project allows scales to be set f
 
 For now, this project is only concerned with the sizes of headings and standard body text. Any bootstrap elements which define a font-size based on the **@base-font-size** variable (or it's derivitives), will not be effected by the integration of boostrap-responsive-type. Currently, this applies to buttons, badges, tooltips and popovers, carousel controls and some form elements.
 
+## EXPERIMENTATION IS IMPORTANT
+
+The default values should work okay, but the whole purpose of this project is to give you power, which you should exploit fully. Tweak the font-size, line-height and scales variables depending on your design and font selections, and find what works.
+
 ## INSTALLATION INSTRUCTIONS
 
 The LESS files provided are designed to work with Bootstrap version v3.1.1, which is available to download here:
