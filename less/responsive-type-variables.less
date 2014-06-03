@@ -37,31 +37,36 @@
 @font-size-h5-lg:       @font-size-base-lg;
 
 //** <h6>s are one step DOWN in scale from <h5>s
+//** Or override for individual breakpoints if necessary
 @font-size-h6-xs:       floor((@font-size-h5-xs / @headings-scaling-xs));
 @font-size-h6-sm:       floor((@font-size-h5-sm / @headings-scaling-sm));
-@font-size-h6-md:       ceil((@font-size-h5-md / @headings-scaling-md));
-@font-size-h6-lg:       ceil((@font-size-h5-lg / @headings-scaling-lg));
+@font-size-h6-md:       floor((@font-size-h5-md / @headings-scaling-md));
+@font-size-h6-lg:       floor((@font-size-h5-lg / @headings-scaling-lg));
 
 //** <h4>s are one step UP in scale from <h5>s
-@font-size-h4-xs:       floor((@font-size-h5-xs * @headings-scaling-xs));
-@font-size-h4-sm:       floor((@font-size-h5-sm * @headings-scaling-sm));
+//** Or override for individual breakpoints if necessary
+@font-size-h4-xs:       ceil((@font-size-h5-xs * @headings-scaling-xs));
+@font-size-h4-sm:       ceil((@font-size-h5-sm * @headings-scaling-sm));
 @font-size-h4-md:       ceil((@font-size-h5-md * @headings-scaling-md));
 @font-size-h4-lg:       ceil((@font-size-h5-lg * @headings-scaling-lg));
 
 //** <h3>s are a second step upward in scale
-@font-size-h3-xs:       floor((@font-size-h4-xs * @headings-scaling-xs));
-@font-size-h3-sm:       floor((@font-size-h4-sm * @headings-scaling-sm));
+//** Or override for individual breakpoints if necessary
+@font-size-h3-xs:       ceil((@font-size-h4-xs * @headings-scaling-xs));
+@font-size-h3-sm:       ceil((@font-size-h4-sm * @headings-scaling-sm));
 @font-size-h3-md:       ceil((@font-size-h4-md * @headings-scaling-md));
 @font-size-h3-lg:       ceil((@font-size-h4-lg * @headings-scaling-lg));
 
 //** <h2>s are a third step upward in scale
-@font-size-h2-xs:       floor((@font-size-h3-xs * @headings-scaling-xs));
-@font-size-h2-sm:       floor((@font-size-h3-sm * @headings-scaling-sm));
+//** Or override for individual breakpoints if necessary
+@font-size-h2-xs:       ceil((@font-size-h3-xs * @headings-scaling-xs));
+@font-size-h2-sm:       ceil((@font-size-h3-sm * @headings-scaling-sm));
 @font-size-h2-md:       ceil((@font-size-h3-md * @headings-scaling-md));
 @font-size-h2-lg:       ceil((@font-size-h3-lg * @headings-scaling-lg));
 
-//** <h1>s are a fourth step upward in scale
-@font-size-h1-xs:       floor((@font-size-h2-xs * @headings-scaling-xs));
-@font-size-h1-sm:       floor((@font-size-h2-sm * @headings-scaling-sm));
+//** <h1>s are a fourth step upward in scale by default
+//** Or override for individual breakpoints if necessary
+@font-size-h1-xs:       ceil((@font-size-h2-xs * @headings-scaling-xs));
+@font-size-h1-sm:       ceil((@font-size-h2-sm * @headings-scaling-sm));
 @font-size-h1-md:       ceil((@font-size-h2-md * @headings-scaling-md));
 @font-size-h1-lg:       ceil((@font-size-h2-lg * @headings-scaling-lg));
