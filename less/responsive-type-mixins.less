@@ -1,0 +1,131 @@
+//
+// Reponsive type mixins
+// ------------------------------------------
+// Use instead of , @font-size-small, @font-size-large, @font-size-h1, @font-size-h2 etc.
+// - Size: 'base', 'small', 'large', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' (default: base)
+// - Multipier: any number to multiply size by (default: 1)
+// (Note, to avoid font sizes dropping below accessible minimum, avoid specifying negative multipliers as far as possible, especially for smaller base fonts)
+
+// - base font sizes and line heights
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'base') {
+    font-size: max(@min-font-size, (@font-size-base * @font-scaling-xs * @multiplier));
+    line-height: @line-height-base * @line-height-scaling-xs;
+    
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-scaling-sm * @multiplier));
+        line-height: @line-height-base * @line-height-scaling-sm;
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-scaling-md * @multiplier));
+        line-height: @line-height-base * @line-height-scaling-md;
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-scaling-lg * @multiplier));
+        line-height: @line-height-base * @line-height-scaling-lg;
+    }
+}
+
+// - heading line heights
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h1'), (@size = 'h2'), (@size = 'h3'), (@size = 'h4'), (@size = 'h5'), (@size = 'h6') {
+    line-height: @headings-line-height * @line-height-scaling-xs;
+    
+    @media (min-width: @screen-sm-min) {
+        line-height: @headings-line-height * @line-height-scaling-sm;
+    }
+    @media (min-width: @screen-md-min) {
+        line-height: @headings-line-height * @line-height-scaling-md;
+    }
+    @media (min-width: @screen-lg-min) {
+        line-height: @headings-line-height * @line-height-scaling-lg;
+    }
+}
+
+// - h1 font sizes
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h1') {
+    font-size: max(@min-font-size, (@font-size-base * @font-size-h1-relative * @font-scaling-xs * @multiplier));
+    
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h1-relative * @font-scaling-sm * @multiplier));
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h1-relative * @font-scaling-md * @multiplier));
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h1-relative * @font-scaling-lg  * @multiplier));
+    }
+}
+
+// - h2 font sizes
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h2') {
+    font-size: max(@min-font-size, (@font-size-base * @font-size-h2-relative * @font-scaling-xs * @multiplier));
+    
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h2-relative * @font-scaling-sm * @multiplier));
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h2-relative * @font-scaling-md * @multiplier));
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h2-relative * @font-scaling-lg  * @multiplier));
+    }
+}
+
+// - h3 font sizes
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h3') {
+    font-size: max(@min-font-size, (@font-size-base * @font-size-h3-relative * @font-scaling-xs * @multiplier));
+
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h3-relative * @font-scaling-sm * @multiplier));
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h3-relative * @font-scaling-md * @multiplier));
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h3-relative * @font-scaling-lg  * @multiplier));
+    }
+}
+
+// - h4 font sizes
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h4') {
+    font-size: max(@min-font-size, (@font-size-base * @font-size-h4-relative * @font-scaling-xs * @multiplier));
+
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h4-relative * @font-scaling-sm * @multiplier));
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h4-relative * @font-scaling-md * @multiplier));
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h4-relative * @font-scaling-lg  * @multiplier));
+    }
+}
+
+// - h5 font sizes
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h5') {
+    font-size: max(@min-font-size, (@font-size-base * @font-size-h5-relative * @font-scaling-xs * @multiplier));
+    
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h5-relative * @font-scaling-sm * @multiplier));
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h5-relative * @font-scaling-md * @multiplier));
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h5-relative * @font-scaling-lg  * @multiplier));
+    }
+}
+
+// - h6 font sizes
+.font-size-responsive(@size: 'base'; @multiplier: 1) when (@size = 'h6') {
+    font-size: max(@min-font-size, (@font-size-base * @font-size-h6-relative * @font-scaling-xs * @multiplier));
+    
+    @media (min-width: @screen-sm-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h6-relative * @font-scaling-sm * @multiplier));
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h6-relative * @font-scaling-md * @multiplier));
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: max(@min-font-size, (@font-size-base * @font-size-h6-relative * @font-scaling-lg  * @multiplier));
+    }
+}
